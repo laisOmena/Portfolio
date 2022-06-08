@@ -1,17 +1,24 @@
-.nav_bar_list {
+body {
+    background-image: linear-gradient(#172026, #5fcdd9);
+}
+
+.navbar_nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.nav_li {
-    display: inline;
-}
+.nav_link {
+    text-decoration: none;
+    /*color: whitesmoke;*/
+}   
 
 .name_center {
     font-family: 'Exo 2', sans-serif;
+    color: whitesmoke;
 }
 
 .text_about_me {
     font-family: 'Josefin Slab', serif;
+    color: whitesmoke;
 }
