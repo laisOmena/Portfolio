@@ -1,0 +1,17 @@
+.nav_bar_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_li {
+    display: inline;
+}
+
+.name_center {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.text_about_me {
+    font-family: 'Josefin Slab', serif;
+}
