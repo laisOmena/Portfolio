@@ -1,0 +1,18 @@
+/*Seletor raiz, padronização das cores*/
+:root {
+    --cor-texto: #FCF6F6;
+ /*   --cor-button: #5ECCD9;
+    --cor-button-dark: #583387; */
+}
+
+/*Reset do css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(#172027, #5ECCD9);
+}
+
