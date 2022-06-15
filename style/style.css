@@ -5,8 +5,7 @@
 /*Seletor raiz, padronização das cores*/
 :root {
     --cor-texto: #FCF6F6;
- /*   --cor-button: #5ECCD9;
-    --cor-button-dark: #583387; */
+    --cor-button: #5ECCD9;
 }
 
 /*Reset do css*/
@@ -33,6 +32,7 @@ li, a, button {
     outline-style: none;
 }
 
+/*Menu NavBar*/
 header {
     display: flex;
     justify-content:center;
@@ -43,12 +43,12 @@ header {
     align-items: center;
 }
 
-.nav_top, .nav_list{
+.nav_top .nav_list{
     display: inline-block;
     padding: 0px 25px;
 }
 
-.nav_top, .nav_list, .nav_link {
+.nav_top .nav_list .nav_link {
     align-items: center;
     transition: all 0.3s ease 0s;
     cursor: pointer;   
@@ -58,7 +58,7 @@ header {
     opacity: 0.5;
 }
 
-
+/*Primeira secção*/
 .section_1 {
     margin: 10%;
 }
@@ -75,7 +75,7 @@ h1 {
 }
 
 .dev {
-    color: #5ECCD9;
+    color: var(--cor-button);
 }
 
 .sub_title {
@@ -86,20 +86,20 @@ h1 {
     opacity: 0.6;
 }
 
-
+/*Botão neon primeira secção*/
 .button_neon {
     font-size: 34px;
     font-weight: 500;
     text-decoration: none;
 
     display: inline-block;
-    color: #5ECCD9;
+    color: var(--cor-button);
     padding: 16px 34px;
-    border: #5ECCD9 8px solid;
+    border: var(--cor-button) 8px solid;
     border-radius: 16px;
 
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 32px 0 #5ECCD9;
-    box-shadow: inset 0 0 32px 0 #5ECCD9, 0 0 32px 0 #5ECCD9;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 32px 0 var(--cor-button);
+    box-shadow: inset 0 0 32px 0 var(--cor-button), 0 0 32px 0 var(--cor-button);
 
     position: relative;
     margin: 2em;
@@ -112,7 +112,7 @@ h1 {
     top: 120%;
     left: 0;
 
-    background-color: #5ECCD9;
+    background-color: var(--cor-button);
 
     width: 100%;
     height: 100%;
@@ -131,7 +131,7 @@ h1 {
     right: 0;
     box-shadow: 0 0 128px 32px #76e5f8;
     opacity: 0;
-    background-color: #5ECCD9;
+    background-color: var(--cor-button);
     z-index: -1;
     transition: opacity 100ms linear;
 }
@@ -143,4 +143,9 @@ h1 {
 
 .button_neon:hover {
     color: var(--cor-texto);
+}
+
+/*Segunda secção da página*/
+.section_2 {
+    margin: 10%;
 }
