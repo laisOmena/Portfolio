@@ -6,6 +6,8 @@
 :root {
     --cor-texto: #FCF6F6;
     --cor-button: #5ECCD9;
+    --font-exo:  'Exo 2', sans-serif;
+    --font-crimson:  'Crimson Text', serif;
 }
 
 /*Reset do css*/
@@ -23,7 +25,7 @@ body {
 }
 
 li, a, button {
-    font-family: 'Exo 2', sans-serif;
+    font-family: var(--font-exo);
     font-weight: 400;
     font-size: 24px;
     text-decoration: none;
@@ -69,7 +71,7 @@ h1 {
 }
 
 .title_name {
-    font-family: 'Crimson Text', serif;
+    font-family: var(--font-crimson);
     font-weight: 700;
     font-size: 84px;
 }
@@ -79,7 +81,7 @@ h1 {
 }
 
 .sub_title {
-    font-family: 'Crimson Text', serif;
+    font-family: var(--font-crimson);
     font-weight: 400;
     font-size: 24px;
     color: var(--cor-texto);
@@ -148,4 +150,42 @@ h1 {
 /*Segunda secção da página*/
 .section_2 {
     margin: 10%;
+}
+
+.title_about_me {
+   font-family: var(--font-crimson);
+   font-weight: 700;
+   font-size: 64px;
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+
+}
+
+.text_about_me, .img {
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+.img {
+    width: 25%;
+    height: 30%;
+    float: right;
+    margin-left: 2em;
+   
+}
+
+.text_about_me{
+    font-family: var(--font-crimson);
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--cor-texto);
+
+    padding: 2em 2em 2em 0em;
+
 }
