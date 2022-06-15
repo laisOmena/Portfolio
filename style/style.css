@@ -10,7 +10,9 @@
 }
 
 /*Reset do css*/
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,6 +20,7 @@
 
 body {
     background-image: linear-gradient(#172027, #5ECCD9);
+    width: 100%;
 }
 
 li, a, button {
@@ -83,37 +86,61 @@ h1 {
     opacity: 0.6;
 }
 
-.button {
-    border-radius: 2em;
+
+.button_neon {
+    font-size: 34px;
+    font-weight: 500;
+    text-decoration: none;
+
+    display: inline-block;
+    color: #5ECCD9;
+    padding: 16px 34px;
+    border: #5ECCD9 8px solid;
+    border-radius: 16px;
+
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 32px 0 #5ECCD9;
+    box-shadow: inset 0 0 32px 0 #5ECCD9, 0 0 32px 0 #5ECCD9;
+
+    position: relative;
     margin: 2em;
 }
 
-.button_neon {
+.button_neon::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
 
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 0.2s;
-    letter-spacing: 4px;
+    background-color: #5ECCD9;
 
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+    filter: blur(64px);
+    opacity: 0.7;
+}
+
+.button_neon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 128px 32px #76e5f8;
+    opacity: 0;
+    background-color: #5ECCD9;
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.button_neon:hover::before,
+.button_neon:hover::after {
+    opacity: 1;
 }
 
 .button_neon:hover {
-
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 2em;
-    box-shadow: 0 0 5px #03e9f4,
-  
-                0 0 25px #03e9f4,
-  
-                0 0 50px #03e9f4,
-  
-                0 0 100px #03e9f4;
-    
+    color: var(--cor-texto);
 }
