@@ -8,6 +8,7 @@
     --cor-button: #5ECCD9;
     --font-exo:  'Exo 2', sans-serif;
     --font-crimson:  'Crimson Text', serif;
+    --counter: 0;
 }
 
 /*Reset do css*/
@@ -20,7 +21,7 @@
 }
 
 body {
-    background-image: linear-gradient(#172027, #5ECCD9);
+    background-image: linear-gradient(#172027 55%, #5ECCD9);
     width: 100%;
 }
 
@@ -61,7 +62,7 @@ header {
 }
 
 /*Primeira secção*/
-.section_1 {
+.section_1, .section_2, .section_3 {
     margin: 10%;
 }
 
@@ -148,9 +149,6 @@ h1 {
 }
 
 /*Segunda secção da página*/
-.section_2 {
-    margin: 10%;
-}
 
 .title_about_me {
    font-family: var(--font-crimson);
@@ -188,4 +186,138 @@ h1 {
 
     padding: 2em 2em 2em 0em;
 
+}
+
+/*Secção 3 skills*/
+.title_skills {
+    font-family: var(--font-crimson);
+    font-weight: 700;
+    font-size: 64px;
+
+    position: relative;
+    text-align: center;
+
+    margin: 2em;
+}
+
+.skills {
+    width: 40em;
+    height: 1em;
+    padding-top: 0.5em;
+}
+
+.skill_bar {
+    height: 100%;
+    background-color: var(--cor-button);
+    border-radius: 5px;
+    margin: 0.8em;
+}
+
+.skill_name {
+    font-family: var(--font-exo);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cor-texto);
+    
+}
+
+.skill_per {
+    height: 100%;
+    background: #76e5f8;
+    border-radius: 5px;
+    position: relative;  
+}
+
+.skill_per::before {
+    content: "";
+    padding: 4px 4px;
+
+    transform: translateX(50%);
+}
+
+.skill_per::after {
+    content: attr(per);
+    font-size: 12px;
+    display: block;
+    color: var(--cor-texto);
+    text-align: right;
+}
+
+#html:hover,
+#css:hover,
+#javascript:hover,
+#linux:hover,
+#git:hover {
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+/* 1nd skill */
+#html {
+    animation: html_fill 2s forwards;
+}
+
+@keyframes html_fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%; 
+    }
+}
+
+/* 2nd skill */
+#css {
+    animation: css_fill 2s forwards;
+}
+
+@keyframes css_fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%; 
+    }
+}
+
+/* 3nd skill */
+#javascript {
+    animation: js_fill 2s forwards;
+}
+
+@keyframes js_fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%; 
+    }
+}
+
+/* 4nd skill */
+#linux {
+    animation: linux_fill 2s forwards;
+}
+
+@keyframes linux_fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%; 
+    }
+}
+
+/* 5nd skill */
+#git {
+    animation: git_fill 2s forwards;
+}
+
+@keyframes git_fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%; 
+    }
 }
