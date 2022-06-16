@@ -203,7 +203,8 @@ h1 {
 .skills {
     width: 40em;
     height: 1em;
-    padding-top: 0.5em;
+
+    margin: 10% 28% 30%;
 }
 
 .skill_bar {
@@ -320,4 +321,10 @@ h1 {
     to {
         width: 60%; 
     }
+}
+
+.footer {
+    background-color: #172027;
+    position: absolute;
+    margin: 2em;
 }
