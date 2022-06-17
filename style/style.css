@@ -175,7 +175,6 @@ h1 {
     float: right;
     margin-left: 2em;
 
-    display: inline-block;
     color: var(--cor-button);
     border: var(--cor-button) 8px solid;
     border-radius: 1rem;
