@@ -217,7 +217,7 @@ h1 {
 .skill_name {
     font-family: var(--font-exo);
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--cor-texto);
     
 }
@@ -327,4 +327,9 @@ h1 {
     background-color: #172027;
     position: absolute;
     margin: 2em;
+}
+
+.copyright {
+    color: var(--cor-texto);
+    font-family: var(--font-exo);
 }
