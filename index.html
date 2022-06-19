@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     
     <title>Portfólio</title>
+
+    <!-- Importando icones -->
+    <script src="https://kit.fontawesome.com/84c826a6a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -43,47 +47,81 @@
     </header>
     <main>
         <section class="section_1"> 
-                <h1>Laís Omena</h1>
-                <p>Web developer</p>
-                <button><a href="https://www.linkedin.com/in/lais-omena/" target="_blank">Contact me</a></button>
+                <h1 class="title_name">I'm <span class="dev">Developer</span> <br>Laís Omena</h1>
+                <p class="sub_title"><i>What doesn't challenge you, doesn't transform you.</i></p>
+                
+                <a class="button_neon" href="https://www.linkedin.com/in/lais-omena/" target="_blank">  
+                Contact me
+                </a>
         </section>
-        <section id="about_me" class="section_2">
-            <h1 class="text_about_me">About me</h1>
 
-            <p class="text_about_me">
-                I'm an IT student, passionate about technology. I'm 23 years old and I'm from Maceio-AL, 
-                at the moment I'm residing in Portugal where I can explore one of my other passions 
-                which is travelling. I'm a sociable and fun person, and "I like to emphasize that quality 
-                that they pointed out to me" which is to think outside the box.
-            </p>
-            <img src="/style/Imagens/WhatsApp Image 2022-05-20 at 23.52.29.jpeg" alt="Foto da pessoa falada na página">
+        <section id="about_me" class="section_2">
+            <h1 class="title_about_me">About me</h1>
+
+            <div class="container">
+                <p class="text_about_me">
+                    I'm an IT student, passionate about technology. I'm 23 years old and I'm from Maceio-BR, 
+                    at the moment I'm residing in Portugal where I can explore one of my other passions 
+                    which is travelling. I'm a sociable and fun person, and "I like to emphasize that quality 
+                    that they pointed out to me" which is to think outside the box.
+                </p>
+                <img class="img" src="/style/Imagens/WhatsApp Image 2022-05-20 at 23.52.29.jpeg" alt="Foto da pessoa falada na página">
+            </div>
         </section>
+
         <section id="skills" class="section_3">
-            <h1>Skills</h1>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Java</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Linux</li>
-                <li>Git/GitHub</li>
-                <li>Assertiveness</li>
-                <li>Team work</li>
-            </ul>
-            <p></p>
+
+            <h1 class="title_skills">Skills</h1>
+
+            <div class="skills">
+                <div class="skill_name">HTML</div>
+                <div class="skill_bar">
+                    <div id="html" class="skill_per" per="90%"></div>
+                </div>
+
+                <div class="skill_name">CSS</div>
+                <div class="skill_bar">
+                    <div id="css" class="skill_per" per="70%"></div>
+                </div>
+
+                <div class="skill_name">JavaScript</div>
+                <div class="skill_bar">
+                    <div id="javascript" class="skill_per" per="50%"></div>
+                </div>
+
+                <div class="skill_name">Linux</div>
+                <div class="skill_bar">
+                    <div id="linux" class="skill_per" per="40%"></div>
+                </div>
+
+                <div class="skill_name">Git/GitHub</div>
+                <div class="skill_bar">
+                    <div id="git" class="skill_per" per="60%"></div>
+                </div>
+            </div>
+                
         </section>
     </main>
-    <footer id="contac_me">
-        <a href="" target="_blank">Linkedin</a>
-        <a href="" target="_blank">E-mail</a>
-        <a href="" target="_blank">GitHub</a>
-        <a href="" target="_blank">WhatsApp</a>
-        <a href="" target="_blank">Instagram</a>
+    <footer id="contac_me" class="footer">
+        <div class="container_footer">
+            <a class="link_footer" href="https://www.linkedin.com/in/lais-omena/" target="_blank">
+                <i class="fa fa-linkedin icons_footer"></i>
+            </a>
+            <a class="link_footer" href="mailto:laisf.omena@gmail.com" target="_blank">
+                <i class="fa fa-envelope icons_footer"></i>
+            </a>
+            <a class="link_footer" href="https://github.com/laisOmena" target="_blank">
+                <i class="fa fa-github icons_footer"></i>
+            </a>
+            <a class="link_footer" href="https://api.whatsapp.com/send?phone=351913411439" target="_blank">
+                <i class="fa fa-whatsapp icons_footer"></i>
+            </a>
+            <a class="link_footer" href="https://www.instagram.com/lais.omena.27/" target="_blank">
+                <i class="fa fa-instagram icons_footer"></i>
+            </a>
+        </div>
 
-        <p>Copyright 2022 &copy;</p>
+        <p class="copyright">Copyright 2022 &copy;</p>
     </footer>
 </body>
 </html>
